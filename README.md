@@ -24,6 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
+#how it works
+App works by connecting to gorest api using angular http module and an api intereceptor, tokens and base url are in environment Once logged in can add edit and delete users
+#web deployment info
+deployed on firebase at https://usercrud-7f772.web.app/home
