@@ -1,0 +1,42 @@
+<div class="col-md-12">
+    <div class="card card-container">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          angular
+        
+        (change)="changeuser($event)"
+        
+         
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="usernameerror"
+        >
+          Username is required!
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          
+          (change)="changepass($event)"
+          required
+          minlength="6"
+       
+        />
+        <button class="btn btn-primary btn-block" (click) = "sendform()">
+            Login
+          </button>
+     
+     
+  
+     
+    </div>
+  </div>
